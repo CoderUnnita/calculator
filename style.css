@@ -3,3 +3,19 @@
     padding: 0;
     
 }
+
+nav{
+    height: 2.5%;
+    width: 100%;
+    background: rgb(172, 255, 5);
+    list-style: none;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+nav ::ul::li{
+    margin-left: 10px;
+}
