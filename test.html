@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development Course</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Frontend Development Course</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About the Course</h2>
+        <p>Learn the fundamentals of frontend development with HTML, CSS, JavaScript, and React. Build projects to master the skills needed to create modern, responsive websites.</p>
+    </section>
+
+    <section id="pricing">
+        <h2>Enroll in the Course</h2>
+        <p>Price: $49.99</p>
+        <button id="purchase-button">Purchase Now</button>
+    </section>
+
+    <section id="dashboard">
+        <h2>Your Dashboard</h2>
+        <p>Access your course content and download resources.</p>
+        <button id="download-code">Download Course Code (ZIP)</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Frontend Development Course. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Payment and Dashboard Logic
+        document.getElementById('purchase-button').addEventListener('click', function() {
+            alert('Redirecting to payment gateway...');
+            // Implement payment gateway logic here
+        });
+
+        document.getElementById('download-code').addEventListener('click', function() {
+            // Create a downloadable ZIP link (simulated here)
+            const link = document.createElement('a');
+            link.href = 'course_code.zip'; // Path to the ZIP file
+            link.download = 'course_code.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>
